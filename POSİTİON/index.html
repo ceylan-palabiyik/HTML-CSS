@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header,
+      footer {
+        background-color: red;
+        color: white;
+        padding: 15px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+
+      .menü {
+        width: 25%;
+      }
+
+      .menü ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menü li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: blueviolet;
+        color: white;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>header</h2>
+    </header>
+    <main class="clearfix">
+      <div class="menü col">
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </div>
+      <div class="content col">
+        <h1>komple web geliştirme eğitimi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut
+          libero quasi architecto doloremque minima sapiente animi dolorum rerum
+          placeat voluptatem tempore aliquam, eius et optio tempora quae
+          deserunt at.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quia
+          quae voluptas laborum doloremque consequuntur hic eius! Asperiores,
+          reprehenderit nobis aut minus quod, dolores voluptate sapiente quidem
+          ad dicta ipsum.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <h2>footer</h2>
+    </footer>
+  </body>
+</html>
