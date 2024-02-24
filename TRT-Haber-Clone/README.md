@@ -1,1 +1,1 @@
-TRT Haber Clone
+This is a clone page
