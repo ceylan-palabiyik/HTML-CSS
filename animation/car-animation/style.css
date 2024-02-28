@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.yol{
+    position: absolute;
+    height: 500px;
+    width: 900px;
+    background: url("./img/arka.jpg");
+    background-size: cover;
+    animation-name: yol;
+    animation-direction: normal;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.araba{
+    width: 420px;
+    height: 150px;
+    background: url("./img/arac.png");
+    position: absolute;
+    top: 245px;
+    left: 80px;
+}
+
+.teker{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 84px;
+    left: 42px;
+    background: url("./img/teker.png");
+    animation-name: dondur;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.teker:nth-child(1){
+    left: 42px;
+}
+
+.teker:nth-child(2){
+    left: 310px;
+}
+
+@keyframes dondur {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes yol{
+    from{
+
+    }
+    to{
+        background-position: 889px 0;
+    }
+}
