@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dunya {
+  width: 480px;
+  height: 480px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.golge {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  background-color: aquamarine;
+  opacity: 0.3;
+}
+
+.dunya_harita {
+  width: 480px;
+  height: 500px;
+  background: url(./image/dunya.jpg);
+  background-size: cover;
+  animation: donme 25s linear 0s infinite;
+}
+
+@keyframes donme {
+  from {
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
