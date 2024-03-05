@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(./image/kutuphane-iha-2059040.jpg);
+  background-size: cover;
+}
+
+.kitap {
+  width: 200px;
+  height: 300px;
+  margin: 0 15px;
+  transform-style: preserve-3d;
+}
+
+.kitap:hover .kapak {
+  transform: perspective(800px) rotateY(-90deg);
+  transform-origin: left;
+}
+
+.kapak {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+
+  background-size: cover !important;
+  transition: 1s;
+  transform-origin: left;
+  transform: translateZ(0);
+}
+
+.kitap:nth-child(1) .kapak {
+  background: url(./image/calikusu.jpg);
+}
+.kitap:nth-child(2) .kapak {
+  background: url(./image/nutuk.png);
+}
+.kitap:nth-child(3) .kapak {
+  background: url(./image/beyaz.png);
+}
+
+.sayfa {
+  z-index: -1;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  text-align: right;
+  padding: 15px;
+  box-sizing: border-box;
+  background: url(./image/ffe0f07ec86edcb2fcfb66e1fd84c170.jpg);
+  background-size: cover;
+}
+
+.sayfa h3 {
+  text-align: center;
+}
+
+.sayfa a {
+  text-decoration: none;
+  border: 2px solid #e7d2a5;
+  border-radius: 20px;
+  padding: 5px;
+  color: #af8c12;
+  background-color: #d0b499;
+  font-weight: bold;
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+  font-size: 11px;
+}
